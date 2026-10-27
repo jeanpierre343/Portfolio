@@ -107,7 +107,7 @@ function App() {
           <div className="contact-actions">
             <a
               className="contact-button"
-              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contactEmail)}`}
+              href={`mailto:${contactEmail}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -117,7 +117,7 @@ function App() {
             </a>
             <a
               className="contact-button"
-              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hello JeanPierre, I would like to get in touch with you.')}`}
+              href={`https://wa.me/${whatsappNumber}`}
               target="_blank"
               rel="noopener noreferrer"
             >
