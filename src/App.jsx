@@ -108,7 +108,7 @@ function App() {
             <a
               className="contact-button"
               href={`mailto:${contactEmail}`}
-              target="_blank"
+              target="_blank" 
               rel="noopener noreferrer"
             >
               <Mail size={19} />
