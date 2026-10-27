@@ -1,5 +1,8 @@
 import { useState } from 'react'
-import { ArrowUpRight, Code2, Image, Link2, Mail, Menu, X } from 'lucide-react'
+import { ArrowUpRight, Image, Mail, Menu, MessageCircle, X } from 'lucide-react'
+
+const contactEmail = 'soueidjeanpierre2@gmail.com'
+const whatsappNumber = '96181326949'
 
 const projects = [
   { number: '01', title: '[ Stephie\'s accessories ]', image: '/images/Screenshot 2026-10-27 130123.png', stack: ['[ Javascript ]', '[ react ]', '[ css ]','[ node.js ]'], projectLink: 'https://stephie-s-accessories.soueidjeanpierre2.workers.dev/' },
@@ -27,7 +30,7 @@ function App() {
        <div className="logo"><span>JP</span></div>
         <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
           <a href="#work" onClick={closeMenu}>[ WORK ]</a>
-          <a href="#about" onClick={closeMenu}>[ ABOUT ]</a>
+          <a href="#skills" onClick={closeMenu}>[ My Skills ]</a>
           <a href="#contact" onClick={closeMenu}>[ CONTACT ]</a>
         </div>
         <button className="menu-button" type="button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
@@ -74,7 +77,7 @@ function App() {
         </div>
       </section>
 
-      <section className="about" id="about">
+      <section className="about" id="skills">
         <header className="section-header">
           <p>[ My Skills ]</p>
         </header>
@@ -101,11 +104,34 @@ function App() {
           </header>
         </div>
         <div className="contact-panel">
-          <a className="email-link" href="mailto:"><Mail size={19} /><span>[ EMAIL ADDRESS ]</span><ArrowUpRight size={18} /></a>
-          <div className="contact-links">
-            <a href="#" aria-label="GitHub"><Code2 size={19} /><span>[ GITHUB ]</span></a>
-            <a href="#" aria-label="LinkedIn"><Link2 size={19} /><span>[ LINKEDIN ]</span></a>
-            <a href="#" aria-label="Resume"><ArrowUpRight size={19} /><span>[ RESUME ]</span></a>
+          <div className="contact-actions">
+            <a
+              className="contact-button"
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(contactEmail)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Mail size={19} />
+              <span>Send me an email</span>
+              <ArrowUpRight size={18} />
+            </a>
+            <a
+              className="contact-button"
+              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent('Hello JeanPierre, I would like to get in touch with you.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle size={19} />
+              <span>Message me on WhatsApp</span>
+              <ArrowUpRight size={18} />
+            </a>
+          </div>
+          <hr className="contact-divider" />
+          <div className="github-footer">
+            <a className="github-icon-button" href="#" aria-label="GitHub profile">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+          </a>
+            <p className="copyright">© {new Date().getFullYear()} JeanPierre Soueid. All rights reserved.</p>
           </div>
         </div>
       </footer>
