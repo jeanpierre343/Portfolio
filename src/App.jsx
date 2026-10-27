@@ -127,10 +127,15 @@ function App() {
             </a>
           </div>
           <hr className="contact-divider" />
-          <div className="github-footer">
-            <a className="github-icon-button" href="#" aria-label="GitHub profile">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-          </a>
+          <div className="social-footer">
+            <div className="social-links">
+              <a className="github-icon-button" href="https://github.com/jeanpierre343" aria-label="GitHub profile">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" />
+              </a>
+              <a className="instagram-icon-button" href="https://instagram.com/soueidjeanpierre" aria-label="Instagram profile" target="_blank" rel="noopener noreferrer">
+                <img src="/images/insta.svg" alt="Instagram" />
+              </a>
+            </div>
             <p className="copyright">© {new Date().getFullYear()} JeanPierre Soueid. All rights reserved.</p>
           </div>
         </div>

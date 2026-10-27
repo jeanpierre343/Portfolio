@@ -538,22 +538,33 @@ footer {
   border: 0;
   border-top: 1px solid var(--muted);
 }
-.github-footer {
+.social-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 14px;
 }
-.github-icon-button {
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.github-icon-button,
+.instagram-icon-button {
   width: 48px;
   height: 48px;
-  display: block;
+  display: grid;
+  place-items: center;
   border-radius: 50%;
   background: transparent;
 }
-.github-icon-button:hover {
-  background: var(--accent);
+
+.github-icon-button img,
+.instagram-icon-button img {
+  width: 48px;
+  height: 48px;
 }
+
 .copyright {
   margin: 0;
   color: var(--muted);
