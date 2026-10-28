@@ -6,6 +6,7 @@ const whatsappNumber = '96181326949'
 
 const projects = [
   { number: '01', title: '[ Stephie\'s accessories ]', image: '/images/Screenshot 2026-10-27 130123.png', stack: ['[ Javascript ]', '[ react ]', '[ css ]','[ node.js ]'], projectLink: 'https://stephie-s-accessories.soueidjeanpierre2.workers.dev/' },
+  { number: '02', title: '[ Personal Portfolio ]', image: '/images/portfolio.png', stack: ['[ react ]', '[ css ]'], projectLink: '#' },
 ]
 
 const skills = [
@@ -57,7 +58,7 @@ function App() {
         <div className="project-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.number}>
-              <a className="project-image" href={project.projectLink} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title}`}>
+              <a className="project-image" href={project.projectLink}  aria-label={`View ${project.title}`}>
                 <span className="project-number">{project.number}</span>
                 {project.image ? (
                   <img className="project-preview" src={project.image} alt={project.title} />
