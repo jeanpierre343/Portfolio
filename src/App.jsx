@@ -29,7 +29,7 @@ function App() {
       <nav className="nav" aria-label="Primary navigation">
        <div className="logo"><span>JP</span></div>
         <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
-          <a href="#work" onClick={closeMenu}>[ WORK ]</a>
+          <a href="#work" onClick={closeMenu}>[ My WORK ]</a>
           <a href="#skills" onClick={closeMenu}>[ My Skills ]</a>
           <a href="#contact" onClick={closeMenu}>[ CONTACT ]</a>
         </div>
@@ -42,7 +42,7 @@ function App() {
         <div className="hero-copy">
           <p className="eyebrow"><span /> [Web Developper]</p>
           <h1>JeanPierre<br />Soueid</h1>
-          <p className="hero-subtitle">[I'm a web developer who enjoys turning ideas into websites and applications that are both useful and easy to use. I like solving problems, and building projects that come to life. I'm always looking for ways to improve every project I work on]</p>
+          <p className="hero-subtitle">[ I'm a web developer who enjoys turning ideas into websites and applications that are both useful and easy to use. I like solving problems, and building projects that come to life. I'm always looking for ways to improve every project I work on ]</p>
           <a className="text-link" href="#work">[ VIEW WORK ] <ArrowUpRight size={17} /></a>
         </div>
         <div className="hero-art" aria-label="Geometric code artwork">
