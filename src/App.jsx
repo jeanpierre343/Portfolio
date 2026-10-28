@@ -29,9 +29,9 @@ function App() {
       <nav className="nav" aria-label="Primary navigation">
        <div className="logo"><span>JP</span></div>
         <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
-          <a href="#work" onClick={closeMenu}>[ My WORK ]</a>
+          <a href="#work" onClick={closeMenu}>[ My Work ]</a>
           <a href="#skills" onClick={closeMenu}>[ My Skills ]</a>
-          <a href="#contact" onClick={closeMenu}>[ CONTACT ]</a>
+          <a href="#contact" onClick={closeMenu}>[ Contact Me ]</a>
         </div>
         <button className="menu-button" type="button" aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen} onClick={() => setMenuOpen((open) => !open)}>
           {menuOpen ? <X size={20} /> : <Menu size={20} />}
